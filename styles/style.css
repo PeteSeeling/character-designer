@@ -35,8 +35,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin-bottom: calc(var(--footer-height));
+    padding-top: 200px;
+    padding-left: 300px;
 }
 
 section {
@@ -88,4 +90,8 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.catchphrase-input{
+    padding-top: 30px;
 }

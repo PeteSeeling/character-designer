@@ -23,3 +23,41 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+
+Events . . .	
+1. Select from at least three dropdowns with at least three options each	1
+
+2. On choosing an option from the dropdown and see the change reflected in the UI with a new image	1
+
+3. On change, See all catchphrases rendered to the DOM	2
+
+4. When submitting a catchphrase, add it to an array of catchphreses, clear the current DOM's list of catchphases, and list all catchphrases in the DOM	1
+
+5. See displayed how many times each dropdown has been changed in the current session	1
+
+6. Functions	
+PURE with TDD: createStatsString	1
+IMPURE: displayStats()	1
+IMPURE: displayCatchphrases()	1
+
+PLAN
+
+HTML
+1. create 3 dropdowns with 3 options eachX
+    * Head
+     - Duck 
+     - Dog
+     - Horse
+    * Middle
+      - Blue
+      - Pink
+      - Red
+    * Bottom
+     - White Pants
+     - Single Leg
+     - Jeans
+2. Create text ouput for catch phrase
+3. Create add button
+4. Display text output
+5. Add count elements for each option
